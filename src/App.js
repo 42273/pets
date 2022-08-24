@@ -37,7 +37,7 @@ function App() {
 
   const handleSearch = (bgnde, endde, upr_cd = "6290000", upkind) => {
     setLoading(true);
-    fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_cd}${upkind}`)
+    fetch(`https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_cd}${upkind}`)
       .then(response => response.json())
       .then(json => {
         setPets(json.response.body.items.item);

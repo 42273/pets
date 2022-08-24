@@ -17,8 +17,14 @@ function Search({ onSearch, upr_cd }) {
     const searchHandle = evt => {
         evt.preventDefault();
         let kind = `&upkind=${upkind.current.value}`
-        onSearch(bgnde.current.value.replaceAll("-", ""), endde.current.value.replaceAll("-", ""), uprCd.current.value, kind)
-
+        let begin = bgnde.current.value.replaceAll("-", "")
+        let end = endde.current.value.replaceAll("-", "")
+        console.log(bgnde,endde)
+        if(!(begin>=end)){
+            onSearch(begin, end, uprCd.current.value, kind)
+        }else{
+            onSearch(end,begin, uprCd.current.value, kind)
+        }
 
     }
     return (<div className="search">
