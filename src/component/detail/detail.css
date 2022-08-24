@@ -1,0 +1,20 @@
+.detail {
+    width: 60%;
+
+}
+
+
+.popfile {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.detailBt {
+    border: 1px solid;
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: aliceblue;
+}

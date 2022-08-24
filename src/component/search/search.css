@@ -1,0 +1,21 @@
+.search{
+    position: sticky;
+}
+
+.searchForm input:focus{
+    outline: 0;
+}
+
+.searchForm input {
+padding: 1px;
+}
+
+.searchForm {
+    display: flex;
+    
+    align-items: center;
+    }
+
+.searchSelect {
+font-size: 16px;
+}

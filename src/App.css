@@ -1,0 +1,9 @@
+.app {
+    display: flex;
+    height: 100%;
+}
+
+@media (max-width: 580px){
+    .app {flex-direction: column;}
+    .detail { width:100%;}
+}
