@@ -17,12 +17,12 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`)
+    fetch(`https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`)
       .then(response => response.json())
       .then(json => {
         setPets(json.response.body.items.item);
       }).catch(e => console.log(e));
-    fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?numOfRows=17&serviceKey=${key}&_type=json`)
+    fetch(`https://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?numOfRows=17&serviceKey=${key}&_type=json`)
       .then(response => response.json())
       .then(json => setUprCd(json.response.body.items.item))
       .then(setLoading(false))
