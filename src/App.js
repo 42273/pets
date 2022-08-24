@@ -12,7 +12,7 @@ function App() {
   const [uprCd, setUprCd] = useState();
 
   const [loading,setLoading] = useState(true);
-  const key = "BhDakp4pNB5aqgFf%2FbTyAg6yNTwkpjsHl2zXdJ%2FDZdZNthSkQwroDn2K21iFpEZ7e3fAOIZgqci%2BJ%2FvgHRaMJg%3D%3D"
+  const key = process.env.REACT_APP_API_KEY;
 
 
   useEffect(() => {
