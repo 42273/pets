@@ -5,7 +5,6 @@ function Detail({ target,onReset }) {
 
     const detail = useRef();
     useEffect(()=>{
-        // window.scrollTo(0,0)
         if(!detail.current){
             return;}
         detail.current.scrollIntoView({behavior:"smooth"})

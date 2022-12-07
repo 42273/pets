@@ -29,7 +29,6 @@ function App() {
       .catch(e => console.log(e, "uprCd"))
 
   }, [])
-  // node 가 아니라 브라우저 환경에서 구동되기 때문에, 브라우저의 명령어들? 사용 가능
 
   const handleSelected = (data) => {
     setSelected(data);
